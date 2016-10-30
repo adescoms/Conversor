@@ -1,0 +1,1 @@
+Project for convert file with Strict Mode JSON to Shell Mode JSON, and vice versa

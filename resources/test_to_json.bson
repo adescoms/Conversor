@@ -1,0 +1,15 @@
+{
+  _id: ObjectId("53c2ab5e4291b17b666d742a"),
+  last_seen_at: new Date(),
+  display_name: undefined,
+  time_stamp : Timestamp(1412180887,1),
+  num : NumberLong("-9223372036854775807"),
+  string : "Hola", 
+  dec : 0.0,
+  regexp : new RegExp(""), 
+  bin : new BinData(1, A0000), 
+  array : [{ "points" : new Date(), "bonus" : 20 }, { "points" : 85, "bonus" : 10 }], 
+  doc : { "role" : new Date(), "alm" : 20 }, 
+  bool : false
+};
+
