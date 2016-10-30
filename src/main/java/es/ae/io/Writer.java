@@ -9,7 +9,7 @@ import es.ae.utils.Constants;
 
 public class Writer {
 
-    public String writeFile(String filePath, String content) {
+    public String writeFile(String filePath, String content) throws Exception {
 
         Path path = null;
 
@@ -17,9 +17,7 @@ public class Writer {
             path = Files.write(Paths.get(filePath), content.getBytes());
 
         } catch (IOException e) {
-
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+        	throw new Exception("Error escribiendo fichero " + filePath);
         }
         return path.toString();
     }

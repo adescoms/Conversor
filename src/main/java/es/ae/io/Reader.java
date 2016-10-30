@@ -8,16 +8,14 @@ import es.ae.utils.Constants;
 
 public class Reader {
 
-    public String readFile(String filePath) {
+    public String readFile(String filePath) throws Exception {
 
         String content = "";
 
         try {
             content = new String(Files.readAllBytes(Paths.get(filePath)));
         } catch (IOException e) {
-
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            throw new Exception("Error leyendo fichero " + filePath);
         }
         return content;
     }

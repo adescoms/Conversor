@@ -35,8 +35,14 @@ public class ReaderTest extends TestCase {
     @Test
     public void testReader() {
 
-        String newFile = reader.readFile("resources/test_to_bson.json");
-        System.out.println(newFile);
+        String content;
+		try {
+			content = reader.readFile("resources/test_to_bson.json");
+			System.out.println(content);
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
+		}
+        
 
     }
 }
